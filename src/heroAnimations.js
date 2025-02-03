@@ -1,6 +1,6 @@
 import { gsap } from 'gsap';
 
-export function hero() {
+export function heroAnimations() {
   const tl = gsap.timeline({
     delay: 0.5,
     defaults: { ease: 'power3.out', duration: 1 },

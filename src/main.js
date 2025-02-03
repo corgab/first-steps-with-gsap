@@ -1,5 +1,8 @@
-import { hero } from './hero.js';
-import { setupScrollAnimations } from './scrollTrigger.js';
+import { heroAnimations } from './heroAnimations.js';
+import { scrollAnimations, runnerAnimation } from './scrollAnimations.js';
+import { textScrollAnimation } from './animations.js';
 
-hero();
-setupScrollAnimations();
+heroAnimations();
+scrollAnimations();
+textScrollAnimation();
+runnerAnimation();
