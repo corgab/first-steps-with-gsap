@@ -10,26 +10,40 @@
 </head>
 
 <body>
-  <div id="app" class="overflow-hidden">
-    <div class="bg-indigo-500 text-center w-full h-screen">
-      <div class="container mx-auto">
-        <div class="py-10">
-          <h1 class="font-bold text-7xl" id="title">Lorem ipsum dolor</h1>
-          <h2 class="font-semibold text-5xl py-10" id="subtitle">Lorem ipsum dolor sit amet</h2>
-          <div class="flex justify-center">
-            <img src="/guy.jpg" alt="guy" class="rounded-full w-[300px] h-[300px] bg-black aspect-square" id="guy">
-          </div>
-        </div>
+  <div id="app" class="overflow-x-hidden">
+
+    <!-- Sezione Intestazione -->
+    <header class="bg-indigo-500 text-center text-white h-full py-10">
+      <h1 class="text-7xl font-bold" id="title">Lorem ipsum dolor</h1>
+      <h2 class="text-4xl font-semibold mt-6" id="subtitle">Lorem ipsum dolor sit amet</h2>
+      <div class="flex justify-center mt-8">
+        <img src="/guy.jpg" alt="guy" class="rounded-full w-52 h-52 bg-black object-cover" id="guy">
       </div>
-      <div class="py-10 flex justify-center">
-        <button id="play"
-          class="bg-indigo-700 py-3 px-6 rounded-full font-semibold hover:bg-indigo-900 text-neutral-100">
-          NON CLICCARMI
-        </button>
+    </header>
+    <!-- Sezione -->
+    <section class="relative h-screen w-full overflow-hidden cards-container">
+      <div
+        class="relative w-full h-full bg-lime-500 flex items-center justify-center text-white text-5xl font-bold pt-5">
+        Lime
       </div>
-    </div>
-  </div>
-  <script type="module" src="/src/main.js"></script>
+      <div class="absolute inset-0 flex items-center justify-center bg-orange-500 text-white text-5xl font-bold"
+        id="orange">
+        Arancio
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-green-500 text-white text-5xl font-bold"
+        id="green">
+        Verde
+      </div>
+    </section>
+
+    <!-- Sezione Finale con Quadrato Animato -->
+    <section class="flex justify-center items-center min-h-screen">
+      <div class="w-24 h-24 bg-indigo-900" id="square"></div>
+    </section>
+
+</body>
+</div>
+<script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
