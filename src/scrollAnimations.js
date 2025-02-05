@@ -35,7 +35,7 @@ export function runnerAnimation() {
     scrollTrigger: {
       trigger: '#runner-container',
       scrub: 1,
-      markers: true,
+      // markers: true,
       start: 'top center',
       end: `+=${textWidth}`,
       pin: true,
